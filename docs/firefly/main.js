@@ -7,16 +7,16 @@ description = `
 `;
 
 characters = [
-// cyan firefly
+// cyan firefly (a)
 `
- ccc  
- c c  
- c ccc
-ccc  c
+  ccc
+  c c 
+ccc c 
+c  ccc
 cccccc
-ccc   
+   ccc  
 `, 
-// wasp
+// wasp (b)
 `
   LLL 
 LLL L 
@@ -25,7 +25,7 @@ yLyLL
 rLyLll
 yLyL  
 `,
-// jar lid
+// jar lid (C)
 `
       
       
@@ -33,7 +33,7 @@ yLyL
       
 llllll
 llllll 
-`, // jar base frame 1
+`, // jar base frame 1 (d)
 `
 L    L
 Lc   L
@@ -41,7 +41,7 @@ L    L
 L  y L
 L    L
  LLLL 
-`, // jar base frame 2
+`, // jar base frame 2 (e)
 `
 L    L
 L    L
@@ -49,7 +49,7 @@ L  c L
 L y  L
 L    L
  LLLL 
-`, // hands
+`, // hands (f)
 `
   lll 
   lll
@@ -58,32 +58,32 @@ L    L
    l  
    l    
 `,
-// purple firefly
+// purple firefly (g)
 `
- ppp  
- p p  
- p ppp
-ppp  p
+  ppp
+  p p 
+ppp p 
+p  ppp
 pppppp
-ppp   
-`,
-// green firefly
+   ppp  
+`, 
+// green firefly (h)
 `
- ggg  
- g g  
- g ggg
-ggg  g
+  ggg
+  g g 
+ggg g 
+g  ggg
 gggggg
-ggg   
-`,
-// blue firefly
+   ggg  
+`, 
+// blue firefly (i)
 `
- bbb  
- b b  
- b bbb
-bbb  b
+  bbb
+  b b 
+bbb b 
+b  bbb
 bbbbbb
-bbb   
+   bbb   
 `
 ];
 
@@ -268,8 +268,8 @@ function update() {
 
 	//Display order
 	color(order.color);
-	char(order.id, 145, 10);
-	text("x" + order.units, 152, 10)
+	char(order.id, 145, 9);
+	text("x" + order.units, 152, 9)
 	color("black");
 
 	//hearts
