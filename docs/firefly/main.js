@@ -44,8 +44,8 @@ L    L
 `, // jar base frame 2 (e)
 `
 L    L
+L   cL
 L    L
-L  c L
 L y  L
 L    L
  LLLL 
@@ -229,7 +229,7 @@ function update() {
 	}
 
 	//print jar out
-	char("d", player.pos.x, player.pos.y);
+	char(addWithCharCode("d", floor(ticks / 30) % 2), player.pos.x, player.pos.y);
 
 	if (input.isPressed && player.pos.y > 25) {
 		player.pos.y--
