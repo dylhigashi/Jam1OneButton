@@ -230,12 +230,12 @@ function update() {
 
 	//print jar out
 	char("d", player.pos.x, player.pos.y);
-	// const d = char(addWithCharCode("d", floor(ticks/30)%2), player.pos); figuring out animation
-	char("c", player.pos.x, player.pos.y - 6);
+
 	if (input.isPressed && player.pos.y > 25) {
 		player.pos.y--
 		char("c", player.pos.x, player.pos.y - 7, { rotation: 45 });
 	} else {
+		char("c", player.pos.x, player.pos.y - 6);
 		player.pos.y++
 	}
 	//making boundaries
